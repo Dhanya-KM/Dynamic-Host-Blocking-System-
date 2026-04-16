@@ -27,7 +27,10 @@ Final `pingall` results showing Host 3 is isolated (X).
   ![Allowed](images/Allowed_host.png)
 - **Blocked Traffic (H3 to H1):** 100% packet loss for the intruder.
   ![Blocked](images/Blocked_host.png)
-
+### 5.Wireshark captures  
+    ![capture1](images/wireshark1.png)
+    ![capture2](images/wireshark2.png)
+    ![capture3](images/wireshark3.png)    
 ## How to Run
 1. **Start the Controller:**
    `python3 pox/pox.py forwarding.firewall_blocking`
