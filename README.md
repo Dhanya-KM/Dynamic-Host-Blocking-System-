@@ -27,10 +27,20 @@ Final `pingall` results showing Host 3 is isolated (X).
   ![Allowed](images/Allowed_host.png)
 - **Blocked Traffic (H3 to H1):** 100% packet loss for the intruder.
   ![Blocked](images/Blocked_host.png)
-### 5.Wireshark captures  
-    ![capture1](images/wireshark1.png)
-    ![capture2](images/wireshark2.png)
-    ![capture3](images/wireshark3.png)    
+### 5. Wireshark Packet Analysis
+The following captures demonstrate the OpenFlow communication between the POX Controller and the Mininet Switch.
+
+- **Capture 1: OpenFlow Protocol Overview**
+  Shows the sequence of `OFPT_PACKET_IN`, `OFPT_PACKET_OUT`, and `OFPT_FLOW_MOD` messages. Note Frame 37 where the intruder (Host 3) is detected.
+  ![capture1](images/wireshark1.png)
+  
+- **Capture 2: Packet-In Detail (Frame 16)**
+  The switch sends a `PACKET_IN` message to the controller because it doesn't have a matching flow entry for the incoming traffic.
+  ![capture2](images/wireshark2.png)
+  
+- **Capture 3: Packet-Out/Flow-Mod Response (Frame 17)**
+  The controller responds with a `PACKET_OUT` or `FLOW_MOD` to tell the switch how to handle the packet (in our case, to drop the intruder's traffic).
+  ![capture3](images/wireshark3.png)
 ## How to Run
 1. **Start the Controller:**
    `python3 pox/pox.py forwarding.firewall_blocking`
