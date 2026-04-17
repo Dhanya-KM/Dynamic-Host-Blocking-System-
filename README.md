@@ -1,7 +1,7 @@
 # SDN-Based Dynamic Host Blocking System
 
 ## Project Overview
-This project implements a reactive firewall using the **POX Controller** and **Mininet**. The system is designed to dynamically detect an unauthorized host (Intruder) and install flow rules in the switch to block its traffic, while ensuring other hosts communicate without interruption.
+This project implements a reactive firewall using the **POX Controller** and **Mininet**. The system is de$$  $$signed to dynamically detect an unauthorized host (Intruder) and install flow rules in the switch to block its traffic, while ensuring other hosts communicate without interruption.
 
 ## Features
 - **Reactive Flow Management:** Rules are pushed only when suspicious activity is detected.
