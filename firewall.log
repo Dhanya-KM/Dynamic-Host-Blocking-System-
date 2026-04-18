@@ -1,0 +1,7 @@
+WARNING:version:POX requires one of the following versions of Python: 3.6 3.7 3.8 3.9
+WARNING:version:You're running Python 3.12.
+WARNING:version:If you run into problems, try using a supported version.
+INFO:core:POX 0.7.0 (gar) is up.
+ERROR:openflow.of_01:Error 98 while binding 0.0.0.0:6633: Address already in use
+ERROR:openflow.of_01: You may have another controller running.
+ERROR:openflow.of_01: Use openflow.of_01 --port=<port> to run POX on another port.

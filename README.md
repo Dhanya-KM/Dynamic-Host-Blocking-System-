@@ -16,6 +16,11 @@ The controller detects Host 3 and triggers the blocking mechanism.
 
 ### 2. Flow Table Verification
 Verified the hardware-level 'drop' rule installed in the switch (s1).
+
+| Priority | Match | Action | Notes |
+|----------|-------|--------|-------|
+| 1 | src_mac=MAC_OF_HOST3 | DROP | Intruder traffic blocked |
+| 0 | default | NORMAL | Normal forwarding |
 ![Flow Table](images/flow_table.png)
 
 ### 3. Network Connectivity Status
@@ -30,17 +35,20 @@ Final `pingall` results showing Host 3 is isolated (X).
 ### 5. Wireshark Packet Analysis
 The following captures demonstrate the OpenFlow communication between the POX Controller and the Mininet Switch.
 
-- **Capture 1: OpenFlow Protocol Overview**
-  Shows the sequence of `OFPT_PACKET_IN`, `OFPT_PACKET_OUT`, and `OFPT_FLOW_MOD` messages. Note Frame 37 where the intruder (Host 3) is detected.
+- **Capture 1: OpenFlow Protocol Overview(wireshark1.jpg)**
+  Shows the high-level sequence of communication. Note Frame 41, where the system transitions from idle echo requests to active threat handling.
   ![capture1](images/wireshark1.png)
   
-- **Capture 2: Packet-In Detail (Frame 16)**
-  The switch sends a `PACKET_IN` message to the controller because it doesn't have a matching flow entry for the incoming traffic.
+- **Capture 2: Detection Phase (wireshark2.png - Frame 41)**
+  The switch encounters traffic with no matching flow entry and sends an OFPT_PACKET_IN message to the controller. This allows the controller to inspect the header and identify the unauthorized MAC address.
   ![capture2](images/wireshark2.png)
   
-- **Capture 3: Packet-Out/Flow-Mod Response (Frame 17)**
-  The controller responds with a `PACKET_OUT` or `FLOW_MOD` to tell the switch how to handle the packet (in our case, to drop the intruder's traffic).
+- **Capture 3: Enforcement Phase (wireshark3.png - Frame 42)**
+  The controller responds with an OFPT_FLOW_MOD command. This message instructs the switch to install a "DROP" rule for the specific intruder MAC, ensuring all future packets from this source are discarded at the switch level.
   ![capture3](images/wireshark3.png)
+- **Capture 4: Post-Blocking Verification (wireshark4.png - Frame 44)**
+Further attempts by the blocked host result in an OFPT_ERROR or termination of the specific flow, confirming that the switch is successfully enforcing the new security policy.
+![capture4](images/wireshark3.png)
 ## How to Run
 1. **Start the Controller:**
    `python3 pox/pox.py forwarding.firewall_blocking`

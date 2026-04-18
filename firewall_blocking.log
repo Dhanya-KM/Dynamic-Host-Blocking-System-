@@ -1,0 +1,30 @@
+2026-04-18 11:59:40,726 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:40,739 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 11:59:40,739 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:40,739 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 11:59:45,205 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:45,245 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 11:59:51,511 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:51,521 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 11:59:53,590 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:53,594 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 11:59:55,617 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:55,619 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 11:59:57,691 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 11:59:57,698 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:00:10,294 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:00:10,296 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:00:46,680 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:00:46,685 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:01:52,271 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:01:52,288 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:03:59,158 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:03:59,165 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:08:04,972 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:08:04,999 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:16:20,617 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:16:20,637 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 12:32:43,676 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 12:32:43,698 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 13:05:29,722 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 13:05:29,733 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
