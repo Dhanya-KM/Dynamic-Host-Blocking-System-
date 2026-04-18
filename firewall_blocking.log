@@ -28,3 +28,5 @@
 2026-04-18 12:32:43,698 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
 2026-04-18 13:05:29,722 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
 2026-04-18 13:05:29,733 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.
+2026-04-18 14:06:39,683 - forwarding.firewall_blocking - INFO - Intruder Detected! Blocking Host 3: 00:00:00:00:00:03
+2026-04-18 14:06:39,693 - forwarding.firewall_blocking - INFO - FLOW TABLE UPDATED: Drop rule installed for 10 minutes.

@@ -21,6 +21,8 @@ Verified the hardware-level 'drop' rule installed in the switch (s1).
 |----------|-------|--------|-------|
 | 1 | src_mac=MAC_OF_HOST3 | DROP | Intruder traffic blocked |
 | 0 | default | NORMAL | Normal forwarding |
+
+
 ![Flow Table](images/flow_table.png)
 
 ### 3. Network Connectivity Status
@@ -51,8 +53,14 @@ Further attempts by the blocked host result in an OFPT_ERROR or termination of t
 ![capture4](images/wireshark3.png)
 ## How to Run
 1. **Start the Controller:**
-   `python3 pox/pox.py forwarding.firewall_blocking`
+  ```bash
+   python3 pox/pox.py forwarding.firewall_blocking
+   ```
 2. **Start Mininet Topology:**
-   `sudo mn --topo single,3 --controller remote --mac`
+   ```bash
+   sudo mn --topo single,3 --controller remote --mac
+   ```
 3. **Test Connectivity:**
-   `mininet> pingall`
+  ```bash
+   mininet> pingall
+   ```
