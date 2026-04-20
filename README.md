@@ -62,5 +62,5 @@ Further attempts by the blocked host result in an OFPT_ERROR or termination of t
    ```
 3. **Test Connectivity:**
   ```bash
-   mininet> pingall
+    pingall
    ```
