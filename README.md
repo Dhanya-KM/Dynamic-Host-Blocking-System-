@@ -15,7 +15,7 @@ This project implements a **Reactive Firewall** using the **POX Controller** and
 
 ### 1. Controller Logic (POX Logs)
 The controller dynamically detects the selected target host and triggers the blocking mechanism.
-![POX Logs](images/pox_logs.png)
+![POX Logs](images/pox_log.png)
 
 ### 2. Flow Table Verification
 Verified the hardware-level 'Drop' rule installed in the switch (s1) using high priority.
@@ -65,16 +65,17 @@ Before starting, clear any previous flows or hung processes from Mininet:
 ```bash
 sudo mn -c
 ```
-Step 2: Start the POX Controller
+### Step 2: Start the POX Controller
 Run the controller. The system will prompt you to interactively select which host to block (1, 2, or 3):
 ```bash
 python3 pox/pox.py forwarding.firewall_blocking
 ```
-Step 3: Start Mininet Topology
-```bash
+### Step 3: Start Mininet Topology
 Open a new terminal and launch the 3-host topology:
+```bash
+   sudo mn --topo single,3 --controller remote --mac
 ```
-Step 4: Verify Connectivity
+### Step 4: Verify Connectivity
 In the Mininet CLI, test the network:
 ```bash
    pingall
